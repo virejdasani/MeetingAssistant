@@ -23,9 +23,11 @@ nameButton.addEventListener("click", function (e) {
     localStorage.setItem("meetingName", JSON.stringify(meetingNameArray))
 
     // Clear the input field
-    nameInput = ""
+    nameInput.value = ""
+
     console.log(meetingNameArray + " = meetingNameArray")
     console.log(localStorage)
+
     displayNotes()
 })
 
@@ -58,8 +60,13 @@ function displayNotes() {
     `
     })
     let meetingNameElem = document.getElementById("meetings")
-    if (meetingNameArray.length != 0) {
+    // If meetings exist
+    if (meetingNameArray .length != 0) {
         meetingNameElem.innerHTML = cardHTML
+    }
+    // If there are no meetings
+    else {
+        meetingNameElem.innerHTML = `You have no meetings. Add a meeting from above!`
     }
     
 }
