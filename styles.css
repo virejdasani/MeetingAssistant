@@ -43,3 +43,8 @@ body {
     width: 70%;
     margin-left: 15%;
 }
+
+#noMeetings {
+    margin: auto;
+    font-size: 25px;
+}

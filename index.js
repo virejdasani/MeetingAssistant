@@ -1,6 +1,7 @@
 let nameButton = document.getElementById("addButton")
 displayNotes()
 
+// On add button click
 nameButton.addEventListener("click", function (e) {
     let nameInput = document.getElementById("nameInput")
 
@@ -31,6 +32,7 @@ nameButton.addEventListener("click", function (e) {
     displayNotes()
 })
 
+// To show notes in cards in the app
 function displayNotes() {
     // Fetch the meeting name from local 
     let meetingName = localStorage.getItem("meetingName")
@@ -53,7 +55,7 @@ function displayNotes() {
                 <div class="card-body">
                     <h5 class="card-title">${element}</h5>
                     <p class="card-text">Some quick example text</p>
-                    <button href="#" class="btn btn-primary">Delete</button>
+                    <button id="${index}" onclick="deleteMeeting(this.id)" class="btn btn-primary">Delete</button>
                 </div>
             </div>
         </div>
@@ -66,7 +68,32 @@ function displayNotes() {
     }
     // If there are no meetings
     else {
-        meetingNameElem.innerHTML = `You have no meetings. Add a meeting from above!`
+        meetingNameElem.innerHTML = `<div id="noMeetings">You have no meetings. Add a meeting from above!</div>`
     }
     
+}
+
+// Deleting a meeting
+function deleteMeeting(index) {
+    console.log("Deleting meeting with index: " + index)
+
+
+    let meetingName = localStorage.getItem("meetingName")
+
+    // In case it doesn't exist
+    if (meetingName === null) {
+        meetingNameArray = []
+    } else {
+        // Else, assign the input to meetingNameArray
+        meetingNameArray = JSON.parse(meetingName)
+    }
+
+    // Delete one meeting with the given index
+    meetingNameArray.splice(index, 1)
+    // Refresh the local storage 
+    localStorage.setItem("meetingName", JSON.stringify(meetingNameArray))
+    // Refresh and display the notes again
+    displayNotes()
+
+
 }
