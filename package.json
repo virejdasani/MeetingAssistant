@@ -1,0 +1,14 @@
+{
+  "name": "meetingassistant",
+  "version": "1.0.0",
+  "description": "Your personal meeting assistant",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Virej Dasani",
+  "license": "MIT",
+  "dependencies": {
+    "electron": "^11.2.1"
+  }
+}
