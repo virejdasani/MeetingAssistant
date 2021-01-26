@@ -68,7 +68,7 @@ function displayNotes() {
     }
     // If there are no meetings
     else {
-        meetingNameElem.innerHTML = `<div id="noMeetings">You have no meetings. Add a meeting from above!</div>`
+        meetingNameElem.innerHTML = `<div id="centre">You have no meetings. Add a meeting from above!</div>`
     }
     
 }
