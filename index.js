@@ -39,5 +39,26 @@ function displayNotes() {
         // Else, assign the input to meetingNameArray
         meetingNameArray = JSON.parse(meetingName)
     }
+
+    // Empty at first
+    let cardHTML = ""
+
+    meetingNameArray.forEach(function (element, index) {
+        cardHTML += `
+        <div class="cards">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">${element}</h5>
+                    <p class="card-text">Some quick example text</p>
+                    <button href="#" class="btn btn-primary">Delete</button>
+                </div>
+            </div>
+        </div>
+    `
+    })
+    let meetingNameElem = document.getElementById("meetings")
+    if (meetingName.length != 0) {
+        meetingNameElem.innerHTML = cardHTML
+    }
     
 }
