@@ -1,4 +1,5 @@
 let nameButton = document.getElementById("addButton")
+displayNotes()
 
 nameButton.addEventListener("click", function (e) {
     let nameInput = document.getElementById("nameInput")
@@ -57,7 +58,7 @@ function displayNotes() {
     `
     })
     let meetingNameElem = document.getElementById("meetings")
-    if (meetingName.length != 0) {
+    if (meetingNameArray.length != 0) {
         meetingNameElem.innerHTML = cardHTML
     }
     
