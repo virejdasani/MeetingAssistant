@@ -6,6 +6,10 @@
   "scripts": {
     "start": "electron ."
   },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virejdasani/MeetingAssistant.git"
+  },
   "author": "Virej Dasani",
   "license": "MIT",
   "dependencies": {
