@@ -108,6 +108,5 @@ function deleteMeeting(index) {
     localStorage.setItem("meetingName", JSON.stringify(meetingNameArray))
     // Refresh and display the notes again
     displayMeetings()
-
-
 }
+
