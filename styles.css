@@ -55,3 +55,9 @@ body {
 #clearAll {
     margin: 30px;
 }
+
+#credits {
+    padding: 20px;
+    text-align: right;
+    color: rgb(72, 72, 72);
+}
