@@ -23,7 +23,7 @@ body {
     width: 50%;
     max-width: 50%;
     margin-left: 25%;
-    margin-top: 1%;
+    margin-top: 10px;
     margin-bottom: 3%;
 }
 
@@ -36,7 +36,6 @@ body {
     display:inline-block;
     padding-left: 30px;
     padding-top: 20px;
-    /* margin-left: 10px; */
 }
 
 #meetings {
