@@ -4,6 +4,7 @@ displayMeetings()
 // On add button click
 nameButton.addEventListener("click", function (e) {
     let nameInput = document.getElementById("nameInput")
+    let linkInput = document.getElementById("linkInput")
 
     // Fetch the meeting name from local 
     let meetingName = localStorage.getItem("meetingName")
@@ -16,15 +17,21 @@ nameButton.addEventListener("click", function (e) {
         meetingNameArray = JSON.parse(meetingName)
     }
 
+    let meetingNameLink = {
+        name: nameInput.value,
+        link: linkInput.value
+    }
+
     // Push the input name value to meetingNameArray
-    meetingNameArray.push(nameInput.value)
+    meetingNameArray.push(meetingNameLink)
     console.log(nameInput.value)
 
     // Set it in local storage in string format
     localStorage.setItem("meetingName", JSON.stringify(meetingNameArray))
 
-    // Clear the input field
+    // Clear the input fields
     nameInput.value = ""
+    linkInput.value = ""
 
     console.log(meetingNameArray + " = meetingNameArray")
     console.log(localStorage)
@@ -53,8 +60,8 @@ function displayMeetings() {
         <div class="cards">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title">${element}</h5>
-                    <p class="card-text">link</p>
+                    <h5 class="card-title">${element.name}</h5>
+                    <p class="card-text">${element.link}</p>
                     <button id="${index}" onclick="deleteMeeting(this.id)" class="btn btn-primary">Delete</button>
                 </div>
             </div>
