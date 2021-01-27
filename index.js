@@ -61,8 +61,8 @@ function displayMeetings() {
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">${element.name}</h5>
-                    <a href="${element.link}" class="btn btn-primary">Launch Meeting</a>   
-                    <button id="${index}" onclick="deleteMeeting(this.id)" class="btn btn-primary">Delete</button>
+                    <div id="launchMeeting"><a href="${element.link}" class="btn btn-outline-primary">Launch Meeting</a></div>   
+                    <button id="${index}" onclick="deleteMeeting(this.id)" class="btn btn-outline-danger">Delete</button>
                 </div>
             </div>
         </div>
