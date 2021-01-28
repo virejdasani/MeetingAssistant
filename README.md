@@ -1,6 +1,6 @@
 # MeetingAssistant
 
-- Meeting Assistant is an app that helps you join recurring online meetings with ease.
+- Meeting Assistant is an open source, free app that helps you join recurring online meetings with ease.
 
 
 ![MeetingAssistantScreenshot](https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantSC.png?raw=true)
