@@ -1,6 +1,4 @@
-# MeetingAssistant
-
-![MeetingAssistantScreenshot](https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantLogo.png?raw=true)
+<img alt="Meeting Assistant" src="https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantLogo.png?raw=true" width="256" height="256" />
 
 - Meeting Assistant is an open source, free app that helps you join recurring online meetings with ease.
 
