@@ -1,6 +1,6 @@
 let nameButton = document.getElementById("addButton")
+let nameButton = document.getElementById("darkmodeButton")
 displayMeetings()
-
 // On add button click
 nameButton.addEventListener("click", function (e) {
     let nameInput = document.getElementById("nameInput")
