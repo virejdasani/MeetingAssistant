@@ -69,7 +69,7 @@ function displayMeetings() {
                     <div id="launchMeeting"><a href="${element.link}" class="btn btn-outline-primary">Launch Meeting</a></div>
                     <div id="showLink"></div>
                     <button id="${index}" onclick="deleteMeeting(this.id)" class="btn btn-outline-danger">Delete</button>
-                    <p class="card-text"><small class="text-muted">${element.link}</small></p>
+                    <p class="card-text"><small class="text-muted-custom">${element.link}</small></p>
                 </div>
             </div>
         </div>
@@ -110,3 +110,7 @@ function deleteMeeting(index) {
     displayMeetings()
 }
 
+function darkModeToggle(){
+    document.getElementById('mainBody').classList.toggle("dark-theme");
+    document.getElementById('mainWindow').classList.toggle("border-dark");
+}
