@@ -10,9 +10,10 @@
     <title>Meeting Assistant</title>
 </head>
 
-<body class="justify-content-center">
-    <div class="small-container border border-dark mainWindow">
-        <h1 class="h3 mb-3 font-weight-normal">Add a meeting</h1>
+<body id="mainBody" class="justify-content-center">
+    <div id="mainWindow" class="small-container border border-dark mainWindow">
+        <h1 class="h3 d-inline mb-3 font-weight-normal">Add a meeting</h1>
+        <button class="dark-theme-btn" onclick="darkModeToggle()">Dark Mode</button>
         <form>
             <input class="inputBox" id="nameInput" type="text" placeholder="Enter meeting name" required="">
             <input class="inputBox" id="linkInput" type="text" placeholder="Enter meeting link" required="">
