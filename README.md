@@ -2,7 +2,7 @@
 [![GitHub license](https://img.shields.io/github/license/virejdasani/meetingassistant)](https://github.com/virejdasani/meetingassistant/blob/master/LICENSE)
 [![GitHub release](https://img.shields.io/github/release/virejdasani/meetingassistant)](https://GitHub.com/virejdasani/meetingassistant/releases/)
 [![GitHub contributors](https://img.shields.io/github/contributors/virejdasani/meetingassistant)](https://GitHub.com/virejdasani/meetingassistant/graphs/contributors/)
-[![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/virejdasani/meetingassistant/issues/)
+[![GitHub issues](https://img.shields.io/github/issues/virejdasani/meetingassistant)](https://GitHub.com/virejdasani/meetingassistant/issues/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Open Source? Yes!](https://badgen.net/badge/Open%20Source%20%3F/Yes%21/blue?icon=github)](https://github.com/virejdasani/meetingassistant/)
 
