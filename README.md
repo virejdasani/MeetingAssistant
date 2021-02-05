@@ -1,3 +1,5 @@
+[![Github All Releases](https://img.shields.io/github/downloads/virejdasani/meetingassistant/total.svg)]()
+
 <img alt="Meeting Assistant" src="https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantBanner.png?raw=true" height="200px" />
 
 
