@@ -6,6 +6,9 @@
 
 ![MeetingAssistantScreenshot](https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantSC.png?raw=true)
 
+![MeetingAssistantScreenshot](https://github.com/virejdasani/MeetingAssistant/blob/master/Assets/meetingAssistantSCLight.png?raw=true)
+
+
 
 - The app is designed such that browser meetings will open in the app itself and any redirecting links will also open in the app.
 - You can add meetings and they will be added to your localStorage which means they won't disappear on app reload.
