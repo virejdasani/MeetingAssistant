@@ -1,6 +1,6 @@
 {
   "name": "meetingassistant",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Your personal meeting assistant",
   "main": "main.js",
   "scripts": {
