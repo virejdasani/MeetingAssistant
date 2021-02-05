@@ -11,18 +11,20 @@
 </head>
 
 <body id="mainBody" class="justify-content-center dark-theme">
+
+    <!-- Switch theme button -->
+    <button class="dark-theme-btn" onclick="darkModeToggle()">Light Mode</button>
+    
+    <!-- Input window -->
     <div id="mainWindow" class="small-container border mainWindow">
         <h1 class="h3 d-inline mb-3 font-weight-normal">Add a meeting</h1>
-        <button class="dark-theme-btn" onclick="darkModeToggle()">Light Mode</button>
-        <form>
+         <form>
             <input class="inputBox" id="nameInput" type="text" placeholder="Enter meeting name" required="">
             <input class="inputBox" id="linkInput" type="text" placeholder="Enter meeting link" required="">
             <input class="inputBox" id="noteInput" type="text" placeholder="Enter a note (Optional)" required="">
         </form>
 
-
         <button class="btn btn-lg btn-primary" id="addButton" type="button">Add</button>
-
     </div>
 
     <h1 id="centre">Your Meetings</h1>
