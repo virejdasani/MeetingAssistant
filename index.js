@@ -113,4 +113,12 @@ function deleteMeeting(index) {
 function darkModeToggle(){
     document.getElementById('mainBody').classList.toggle("dark-theme");
     document.getElementById('mainWindow').classList.toggle("border-dark");
+    var btn = document.querySelector('.dark-theme-btn');
+    
+    if(document.querySelector('body').classList.contains('dark-theme')){
+        btn.innerHTML = 'Light Mode';
+    }else {
+        btn.innerHTML = 'Dark Mode';
+    }
+    
 }
